@@ -1,6 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Path of Maps</title>
+    <meta name="description" content="Track your map runs in Path of Exile.">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-b65fd2acb1f0c1f2b5572ee7998340c236a3df22c4cb9a999f90374a6564728b.ico" />
+
+    <link rel="stylesheet" media="screen" href="/assets/application-00602a93bea535249acbd8123cef020c7e4fa953fb0d37e17bf97cd58d551c7e.css" />
+    <script src="/assets/vendor/modernizr-8560f87d0bc4f137917740acabfc72f0d469565340a978cb6aad12c44b48093a.js"></script>
+    <script src="/assets/application-7628db8e5689dec342a07f1fbbc1aa428a107d5ab28ab9031c36af802a4770b5.js"></script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="G4yjc1zvGwJldAKlNnmYD3WtLosl+42UrNjRalGvNLj6Ri7xH9rWzKRD9DEwQAJL2lasM6/FiPjonpbO86jbtg==" />
+  </head>
+
   <body>
-    <h1>Hello</h1>
+
+    
+  <nav id="top-bar" class="flex-board">
+  <h1 class="static-flex">
+
+    <a id="logo" href="/">
+      Path Of Maps
+</a>  </h1>
+
+  <div class="flex left-nav">
+  <div class="flex-board">
+
+  <form id="search-form" class="flex" action="/maps" accept-charset="UTF-8" method="get">
+  <div id="top-search" class="radius search-input-field">
+    <input type="text" name="q" id="q" placeholder="Search maps" autocomplete="off" />
+
+    <a class="help-button text-center" href="#search-help">
+      <i class="fa fa-question"></i>
+</a>  </div>
+</form>
+
+  <ul class="static-flex">
+    <li>
+      <a data-channel="maps" href="/maps">
+        <span class="hide-for-large-up"><i class="fa fa-map-o"></i></span>
+        <span class="show-for-large-up">Maps</span>
+</a>    </li>
+    <li>
+      <a data-channel="stats" href="/stats">
+        <span class="hide-for-large-up"><i class="fa fa-bar-chart"></i></span>
+        <span class="show-for-large-up">Stats</span>
+</a>    </li>
+    <li>
+      <a data-channel="articles" href="/articles">
+        <span class="hide-for-large-up"><i class="fa fa-circle-o"></i></span>
+        <span class="show-for-large-up">
+          Community
+
+          <span data-article-notifications></span>
+        </span>
+</a>    </li>
+  </ul>
+  </div>
+</div>
+
+
+  <ul class="static-flex">
+      <li>
+  <a href="/users/sign_in">Sign in</a>
+</li>
+<li class="show-for-small-only">
+  <a href="/users/sign_up">Sign up</a>
+</li>
+<li class="has-form show-for-medium-up">
+  <a class="button radius" href="/users/sign_up">Sign up</a>
+</li>
+
+  </ul>
+</nav>
+
+
+  <div data-layout="page">
+    <div data-region="page-header">
+      
+    </div>
+
+    <div data-region="page-body" class="page-content">
+      
+
+    </div>
+
+    <div data-region="modal"></div>
+  </div>
+
+
+    <script type="text/javascript">
+  $(function() {
+      $.ajaxSetup({ cache: false })
+
+  PoM.app.start({
+    user: {
+    },
+    urls: {
+      setting_url: "http://pathofmaps.com/settings"
+    }
+  });
+
+  });
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70079797-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
   </body>
 </html>
+
